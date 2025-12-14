@@ -1239,6 +1239,110 @@ body {
   transform: translateY(-4px);
 }
 
+/* Spécifique aux pochettes d’album */
+.category-section[data-category="pochette-album"] .artwork-image {
+  max-width: 400px;
+  height: 400px;
+}
+
+.category-section[data-category="pochette-album"] .artwork-image img {
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+}
+
+/* Catégories du portfolio */
+.gallery-header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-16);
+  margin-bottom: var(--space-24);
+}
+
+.gallery-title {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-xl);
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+.category-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-8);
+}
+
+.category-chip {
+  border: 1px solid var(--artist-gray-medium);
+  background: var(--artist-white);
+  color: var(--artist-black);
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-family: var(--font-heading);
+  font-size: var(--font-size-sm);
+  cursor: pointer;
+  transition: all var(--duration-fast) var(--ease-standard);
+}
+
+.category-chip:hover {
+  background: var(--artist-gray-light);
+  transform: translateY(-1px);
+}
+
+.category-chip.is-active {
+  background: var(--artist-black);
+  color: var(--artist-white);
+  border-color: var(--artist-black);
+}
+.category-section {
+  margin-bottom: var(--space-32);
+}
+
+.category-section-title {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-3xl);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  margin-bottom: var(--space-16);
+  padding-bottom: var(--space-8);
+  border-bottom: 1px solid var(--artist-gray-medium);
+}
+
+.bd-project {
+  padding: var(--space-32) 0 var(--space-24);
+  border-top: 2px solid var(--artist-black);
+}
+
+.bd-project:first-of-type {
+  border-top: none;
+}
+
+.bd-project-header {
+  margin-bottom: var(--space-16);
+}
+
+.bd-project-title {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-3xl);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.bd-project-meta {
+  font-size: var(--font-size-sm);
+  letter-spacing: 0.12em;
+  color: var(--artist-gray-dark);
+  margin-top: var(--space-4);
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .gallery-header {
+    align-items: flex-start;
+  }
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .container {

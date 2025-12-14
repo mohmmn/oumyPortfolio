@@ -19,9 +19,7 @@
             <div class="nav-menu" id="nav-menu">
                 <a href="#" class="nav-link active" data-page="portfolio">Portfolio</a>
                 <a href="#" class="nav-link" data-page="about">À propos</a>
-                <button id="theme-toggle" class="theme-toggle">
-                    🌙
-                </button>
+                <button id="theme-toggle" class="theme-toggle">🌙</button>
             </div>
         </div>
     </nav>
@@ -29,82 +27,576 @@
     <!-- Page Portfolio -->
     <main class="page active" id="portfolio-page">
         <div class="container">
+            <!-- Hero -->
             <section class="hero">
                 <h2>Portfolio</h2>
                 <p class="hero-subtitle">Illustrations, détails, couleurs et rêves</p>
             </section>
 
-            <!-- Galerie d'œuvres -->
+            <!-- Galerie d’œuvres -->
             <section class="gallery">
-                <div class="artwork-grid">
-                    <div class="artwork-item">
-                        <div class="artwork-image">
-                            <img src="Images/img1.webp" alt="Titre 1">
-                        </div>
-                        <div class="artwork-info">
-                            <h3>Titre 1</h3>
-                            <p class="medium">Description</p>
-                            <p class="year">Date</p>
-                        </div>
-                    </div>
-
-                    <div class="artwork-item">
-                        <div class="artwork-image">
-                            <img src="Images/img2.webp" alt="Titre 2">
-                        </div>
-                        <div class="artwork-info">
-                            <h3>Titre 2</h3>
-                            <p class="medium">Description</p>
-                            <p class="year">Date</p>
-                        </div>
-                    </div>
-
-                    <div class="artwork-item">
-                        <div class="artwork-image">
-                            <img src="Images/img3.webp" alt="Titre 3">
-                        </div>
-                        <div class="artwork-info">
-                            <h3>Titre 3</h3>
-                            <p class="medium">Description</p>
-                            <p class="year">Date</p>
-                        </div>
-                    </div>
-
-                    <div class="artwork-item">
-                        <div class="artwork-image">
-                            <img src="Images/img4.webp" alt="Titre 4">
-                        </div>
-                        <div class="artwork-info">
-                            <h3>Titre 4</h3>
-                            <p class="medium">Description</p>
-                            <p class="year">Date</p>
-                        </div>
-                    </div>
-
-                    <div class="artwork-item">
-                        <div class="artwork-image">
-                            <img src="Images/img5.webp" alt="Titre 5">
-                        </div>
-                        <div class="artwork-info">
-                            <h3>Titre 5</h3>
-                            <p class="medium">Description</p>
-                            <p class="year">Date</p>
-                        </div>
-                    </div>
-
-                    <div class="artwork-item">
-                        <div class="artwork-image">
-                            <img src="Images/img6.webp" alt="Titre 6">
-                        </div>
-                        <div class="artwork-info">
-                            <h3>Titre 6</h3>
-                            <p class="medium">Description</p>
-                            <p class="year">Date</p>
-                        </div>
+                <!-- Catégories -->
+                <div class="gallery-header">
+                    <h3 class="gallery-title">Catégories</h3>
+                    <div class="category-chips" aria-label="Catégories d’œuvres">
+                        <button class="category-chip is-active" type="button" data-category="all">Toutes</button>
+                        <button class="category-chip" type="button" data-category="bande-dessinee">Bande dessinée</button>
+                        <button class="category-chip" type="button" data-category="illustration">Illustration</button>
+                        <button class="category-chip" type="button" data-category="pochette-album">Pochette d’album</button>
+                        <button class="category-chip" type="button" data-category="exposition">Exposition</button>
+                        <button class="category-chip" type="button" data-category="poesie">Poésie</button>
+                        <button class="category-chip" type="button" data-category="inktober">Inktober</button>
                     </div>
                 </div>
-            </section>
 
+                <!-- Bande dessinée -->
+                <section class="category-section" data-category="bande-dessinee">
+                    <h3 class="category-section-title">Bande dessinée</h3>
+
+                    <!-- Projet : Yemmna -->
+                    <article class="bd-project">
+                        <header class="bd-project-header">
+                            <h4 class="bd-project-title">Yemmna</h4>
+                            <p class="bd-project-meta">Bande dessinée · 3 planches · 2024</p>
+                        </header>
+                        <div class="artwork-grid">
+                            <div class="artwork-item" data-category="bande-dessinee">
+                                <div class="artwork-image">
+                                    <img src="Images/Bandes dessinées/couvertureYemmna.webp" alt="Yemmna - Couverture">
+                                </div>
+                                <div class="artwork-info">
+                                    <h3>Yemmna Couverture</h3>
+                                    <p class="medium">format 297x 420 / Encre, Ibispaint</p>
+                                    <p class="year">2024</p>
+                                </div>
+                            </div>
+                            <div class="artwork-item" data-category="bande-dessinee">
+                                <div class="artwork-image">
+                                    <img src="Images/Bandes dessinées/yemmna1-3.webp" alt="Yemmna 1/3">
+                                </div>
+                                <div class="artwork-info">
+                                    <h3>Yemmna 1/3</h3>
+                                    <p class="medium">format 297x 420 / Encre, Ibispaint</p>
+                                    <p class="year">2024</p>
+                                </div>
+                            </div>
+                            <div class="artwork-item" data-category="bande-dessinee">
+                                <div class="artwork-image">
+                                    <img src="Images/Bandes dessinées/yemmna2-3.webp" alt="Yemmna 2/3">
+                                </div>
+                                <div class="artwork-info">
+                                    <h3>Yemmna 2/3</h3>
+                                    <p class="medium">format 297x 420 / Encre, Ibispaint</p>
+                                    <p class="year">2024</p>
+                                </div>
+                            </div>
+                            <div class="artwork-item" data-category="bande-dessinee">
+                                <div class="artwork-image">
+                                    <img src="Images/Bandes dessinées/yemmna3-3.webp" alt="Yemmna 3/3">
+                                </div>
+                                <div class="artwork-info">
+                                    <h3>Yemmna 3/3</h3>
+                                    <p class="medium">format 297x 420 / Encre, Ibispaint</p>
+                                    <p class="year">2024</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Projet : Dezoom -->
+                    <article class="bd-project">
+                        <header class="bd-project-header">
+                            <h4 class="bd-project-title">Dezoom</h4>
+                            <p class="bd-project-meta">Bande dessinée · 3 images · 2024</p>
+                        </header>
+                        <div class="artwork-grid">
+                            <div class="artwork-item" data-category="bande-dessinee">
+                                <div class="artwork-image">
+                                    <img src="Images/Bandes dessinées/dezoom1-3.webp" alt="Dezoom 1/3">
+                                </div>
+                                <div class="artwork-info">
+                                    <h3>Dezoom 1/3</h3>
+                                    <p class="medium">format 297x 420 / Encre, Ibispaint</p>
+                                    <p class="year">2024</p>
+                                </div>
+                            </div>
+                            <div class="artwork-item" data-category="bande-dessinee">
+                                <div class="artwork-image">
+                                    <img src="Images/Bandes dessinées/dezoom2-3.webp" alt="Dezoom 2/3">
+                                </div>
+                                <div class="artwork-info">
+                                    <h3>Dezoom 2/3</h3>
+                                    <p class="medium">format 297x 420 / Encre, Ibispaint</p>
+                                    <p class="year">2024</p>
+                                </div>
+                            </div>
+                            <div class="artwork-item" data-category="bande-dessinee">
+                                <div class="artwork-image">
+                                    <img src="Images/Bandes dessinées/dezoom3-3.webp" alt="Dezoom 3/3">
+                                </div>
+                                <div class="artwork-info">
+                                    <h3>Dezoom 3/3</h3>
+                                    <p class="medium">format 297x 420 / Encre, Ibispaint</p>
+                                    <p class="year">2024</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Projet : Dans la forêt -->
+                    <article class="bd-project">
+                        <header class="bd-project-header">
+                            <h4 class="bd-project-title">Dans la forêt</h4>
+                            <p class="bd-project-meta">Bande dessinée · 3 images · 2024</p>
+                        </header>
+                        <div class="artwork-grid">
+                            <div class="artwork-item" data-category="bande-dessinee">
+                                <div class="artwork-image">
+                                    <img src="Images/Bandes dessinées/dans la foret1-3.webp" alt="Dans la forêt 1/3">
+                                </div>
+                                <div class="artwork-info">
+                                    <h3>Dans la forêt 1/3</h3>
+                                    <p class="medium">format 297x 420 / Encre, Ibispaint</p>
+                                    <p class="year">2024</p>
+                                </div>
+                            </div>
+                            <div class="artwork-item" data-category="bande-dessinee">
+                                <div class="artwork-image">
+                                    <img src="Images/Bandes dessinées/dans la foret2-3.webp" alt="Dans la forêt 2/3">
+                                </div>
+                                <div class="artwork-info">
+                                    <h3>Dans la forêt 2/3</h3>
+                                    <p class="medium">format 297x 420 / Encre, Ibispaint</p>
+                                    <p class="year">2024</p>
+                                </div>
+                            </div>
+                            <div class="artwork-item" data-category="bande-dessinee">
+                                <div class="artwork-image">
+                                    <img src="Images/Bandes dessinées/dans la foret3-3.webp" alt="Dans la forêt 3/3">
+                                </div>
+                                <div class="artwork-info">
+                                    <h3>Dans la forêt 3/3</h3>
+                                    <p class="medium">format 297x 420 / Encre, Ibispaint</p>
+                                    <p class="year">2024</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+
+                <!-- Illustration -->
+                <section class="category-section" data-category="illustration">
+                    <h3 class="category-section-title">Illustration</h3>
+                    <div class="artwork-grid">
+                        <div class="artwork-item" data-category="illustration">
+                            <div class="artwork-image">
+                                <img src="Images/Illustrations/cabane en forme de cœur.webp" alt="Cabane en forme de cœur">
+                            </div>
+                            <div class="artwork-info">
+                                <h3>Cabane en forme de cœur</h3>
+                                <p class="medium">format 297x 420 / Encre</p>
+                                <p class="year">2024</p>
+                            </div>
+                        </div>
+                        <div class="artwork-item" data-category="illustration">
+                            <div class="artwork-image">
+                                <img src="Images/Illustrations/fable.webp" alt="Fable">
+                            </div>
+                            <div class="artwork-info">
+                                <h3>Fable</h3>
+                                <p class="medium">format 297x 420 / Encre</p>
+                                <p class="year">2024</p>
+                            </div>
+                        </div>
+                        <div class="artwork-item" data-category="illustration">
+                            <div class="artwork-image">
+                                <img src="Images/Illustrations/les rois.webp" alt="Les rois">
+                            </div>
+                            <div class="artwork-info">
+                                <h3>Les rois</h3>
+                                <p class="medium">format 297x 420 / Encre</p>
+                                <p class="year">2024</p>
+                            </div>
+                        </div>
+                        <div class="artwork-item" data-category="illustration">
+                            <div class="artwork-image">
+                                <img src="Images/Illustrations/oublie.webp" alt="Oublie">
+                            </div>
+                            <div class="artwork-info">
+                                <h3>Oublie</h3>
+                                <p class="medium">format 297x 420 / Encre</p>
+                                <p class="year">2024</p>
+                            </div>
+                        </div>
+                        <div class="artwork-item" data-category="illustration">
+                            <div class="artwork-image">
+                                <img src="Images/Illustrations/plein les dents.webp" alt="Plein les dents">
+                            </div>
+                            <div class="artwork-info">
+                                <h3>Plein les dents</h3>
+                                <p class="medium">format 297x 420 / Encre</p>
+                                <p class="year">2024</p>
+                            </div>
+                        </div>
+                        <div class="artwork-item" data-category="illustration">
+                            <div class="artwork-image">
+                                <img src="Images/Illustrations/sens titre.webp" alt="Sans titre">
+                            </div>
+                            <div class="artwork-info">
+                                <h3>Sans titre</h3>
+                                <p class="medium">format 297x 420 / Encre</p>
+                                <p class="year">2024</p>
+                            </div>
+                        </div>
+                        <div class="artwork-item" data-category="illustration">
+                            <div class="artwork-image">
+                                <img src="Images/Illustrations/tordu en deux.webp" alt="Tordu en deux">
+                            </div>
+                            <div class="artwork-info">
+                                <h3>Tordu en deux</h3>
+                                <p class="medium">format 297x 420 / Encre</p>
+                                <p class="year">2024</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Pochette d’album -->
+                <section class="category-section" data-category="pochette-album">
+                    <h3 class="category-section-title">Pochette d’album</h3>
+                    <div class="artwork-grid">
+                        <div class="artwork-item" data-category="pochette-album">
+                            <div class="artwork-image">
+                                <a href="https://kasbahrockers.bandcamp.com/album/kasbah-rockers-the-singles" target="_blank" rel="noopener noreferrer">
+                                    <img src="Images/Pochette Album/Pochette Kasbah Rockers.webp" alt="Pochette Album Kasbah Rockers">
+                                </a>
+                            </div>
+                            <div class="artwork-info">
+                                <h3>Pochette Kasbah Rockers</h3>
+                                <p class="medium">Pochette d'album</p>
+                                <p class="year">2024</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Inktober -->
+                <section class="category-section" data-category="inktober">
+                    <h3 class="category-section-title">Inktober</h3>
+                    <div class="artwork-grid">
+                        <div class="artwork-item" data-category="inktober">
+                            <div class="artwork-image">
+                                <img src="Images/Inktober/1-babayaga.png" alt="Inktober jour 1 - Babayaga">
+                            </div>
+                            <div class="artwork-info">
+                                <h3>Inktober 1/31 – Babayaga</h3>
+                                <p class="medium">Encre</p>
+                                <p class="year">2025</p>
+                            </div>
+                        </div>
+                        <div class="artwork-item" data-category="inktober">
+                            <div class="artwork-image">
+                                <img src="Images/Inktober/2-joseon saja.png" alt="Inktober jour 2 - Joseon saja">
+                            </div>
+                            <div class="artwork-info">
+                                <h3>Inktober 2/31 – Joseon saja</h3>
+                                <p class="medium">Encre</p>
+                                <p class="year">2025</p>
+                            </div>
+                        </div>
+                        <div class="artwork-item" data-category="inktober">
+                            <div class="artwork-image">
+                                <img src="Images/Inktober/3-hansel & gretel.png" alt="Inktober jour 3 - Hansel & Gretel">
+                            </div>
+                            <div class="artwork-info">
+                                <h3>Inktober 3/31 – Hansel & Gretel</h3>
+                                <p class="medium">Encre</p>
+                                <p class="year">2025</p>
+                            </div>
+                        </div>
+                        <div class="artwork-item" data-category="inktober">
+                            <div class="artwork-image">
+                                <img src="Images/Inktober/4-leshy.png" alt="Inktober jour 4 - Leshy">
+                            </div>
+                            <div class="artwork-info">
+                                <h3>Inktober 4/31 – Leshy</h3>
+                                <p class="medium">Encre</p>
+                                <p class="year">2025</p>
+                            </div>
+                        </div>
+                        <div class="artwork-item" data-category="inktober">
+                            <div class="artwork-image">
+                                <img src="Images/Inktober/5-huka'i po.png" alt="Inktober jour 5 - Huka'i Po">
+                            </div>
+                            <div class="artwork-info">
+                                <h3>Inktober 5/31 – Huka'i Po</h3>
+                                <p class="medium">Encre</p>
+                                <p class="year">2025</p>
+                            </div>
+                        </div>
+                        <div class="artwork-item" data-category="inktober">
+                            <div class="artwork-image">
+                                <img src="Images/Inktober/6-draugr.png" alt="Inktober jour 6 - Draugr">
+                            </div>
+                            <div class="artwork-info">
+                                <h3>Inktober 6/31 – Draugr</h3>
+                                <p class="medium">Encre</p>
+                                <p class="year">2025</p>
+                            </div>
+                        </div>
+                        <div class="artwork-item" data-category="inktober">
+                            <div class="artwork-image">
+                                <img src="Images/Inktober/7-mami wata.png" alt="Inktober jour 7 - Mami Wata">
+                            </div>
+                            <div class="artwork-info">
+                                <h3>Inktober 7/31 – Mami Wata</h3>
+                                <p class="medium">Encre</p>
+                                <p class="year">2025</p>
+                            </div>
+                        </div>
+                        <div class="artwork-item" data-category="inktober">
+                            <div class="artwork-image">
+                                <img src="Images/Inktober/8-strix.png" alt="Inktober jour 8 - Strix">
+                            </div>
+                            <div class="artwork-info">
+                                <h3>Inktober 8/31 – Strix</h3>
+                                <p class="medium">Encre</p>
+                                <p class="year">2025</p>
+                            </div>
+                        </div>
+                        <div class="artwork-item" data-category="inktober">
+                            <div class="artwork-image">
+                                <img src="Images/Inktober/9-ajatar.png" alt="Inktober jour 9 - Ajatar">
+                            </div>
+                            <div class="artwork-info">
+                                <h3>Inktober 9/31 – Ajatar</h3>
+                                <p class="medium">Encre</p>
+                                <p class="year">2025</p>
+                            </div>
+                        </div>
+                        <div class="artwork-item" data-category="inktober">
+                            <div class="artwork-image">
+                                <img src="Images/Inktober/10-anansi the spider.png" alt="Inktober jour 10 - Anansi the Spider">
+                            </div>
+                            <div class="artwork-info">
+                                <h3>Inktober 10/31 – Anansi the Spider</h3>
+                                <p class="medium">Encre</p>
+                                <p class="year">2025</p>
+                            </div>
+                        </div>
+                        <div class="artwork-item" data-category="inktober">
+                            <div class="artwork-image">
+                                <img src="Images/Inktober/11-the calchona.png" alt="Inktober jour 11 - The Calchona">
+                            </div>
+                            <div class="artwork-info">
+                                <h3>Inktober 11/31 – The Calchona</h3>
+                                <p class="medium">Encre</p>
+                                <p class="year">2025</p>
+                            </div>
+                        </div>
+                        <div class="artwork-item" data-category="inktober">
+                            <div class="artwork-image">
+                                <img src="Images/Inktober/12-bloody mary.png" alt="Inktober jour 12 - Bloody Mary">
+                            </div>
+                            <div class="artwork-info">
+                                <h3>Inktober 12/31 – Bloody Mary</h3>
+                                <p class="medium">Encre</p>
+                                <p class="year">2025</p>
+                            </div>
+                        </div>
+                        <div class="artwork-item" data-category="inktober">
+                            <div class="artwork-image">
+                                <img src="Images/Inktober/13-acalica.png" alt="Inktober jour 13 - Acalica">
+                            </div>
+                            <div class="artwork-info">
+                                <h3>Inktober 13/31 – Acalica</h3>
+                                <p class="medium">Encre</p>
+                                <p class="year">2025</p>
+                            </div>
+                        </div>
+                        <div class="artwork-item" data-category="inktober">
+                            <div class="artwork-image">
+                                <img src="Images/Inktober/14-popobawa.png" alt="Inktober jour 14 - Popobawa">
+                            </div>
+                            <div class="artwork-info">
+                                <h3>Inktober 14/31 – Popobawa</h3>
+                                <p class="medium">Encre</p>
+                                <p class="year">2025</p>
+                            </div>
+                        </div>
+                        <div class="artwork-item" data-category="inktober">
+                            <div class="artwork-image">
+                                <img src="Images/Inktober/15-jersey devil.png" alt="Inktober jour 15 - Jersey Devil">
+                            </div>
+                            <div class="artwork-info">
+                                <h3>Inktober 15/31 – Jersey Devil</h3>
+                                <p class="medium">Encre</p>
+                                <p class="year">2025</p>
+                            </div>
+                        </div>
+                        <div class="artwork-item" data-category="inktober">
+                            <div class="artwork-image">
+                                <img src="Images/Inktober/16-naga.png" alt="Inktober jour 16 - Naga">
+                            </div>
+                            <div class="artwork-info">
+                                <h3>Inktober 16/31 – Naga</h3>
+                                <p class="medium">Encre</p>
+                                <p class="year">2025</p>
+                            </div>
+                        </div>
+                        <div class="artwork-item" data-category="inktober">
+                            <div class="artwork-image">
+                                <img src="Images/Inktober/17-nian.png" alt="Inktober jour 17 - Nian">
+                            </div>
+                            <div class="artwork-info">
+                                <h3>Inktober 17/31 – Nian</h3>
+                                <p class="medium">Encre</p>
+                                <p class="year">2025</p>
+                            </div>
+                        </div>
+                        <div class="artwork-item" data-category="inktober">
+                            <div class="artwork-image">
+                                <img src="Images/Inktober/18-strigoi.png" alt="Inktober jour 18 - Strigoi">
+                            </div>
+                            <div class="artwork-info">
+                                <h3>Inktober 18/31 – Strigoi</h3>
+                                <p class="medium">Encre</p>
+                                <p class="year">2025</p>
+                            </div>
+                        </div>
+                        <div class="artwork-item" data-category="inktober">
+                            <div class="artwork-image">
+                                <img src="Images/Inktober/19-skogsra.png" alt="Inktober jour 19 - Skogsra">
+                            </div>
+                            <div class="artwork-info">
+                                <h3>Inktober 19/31 – Skogsra</h3>
+                                <p class="medium">Encre</p>
+                                <p class="year">2025</p>
+                            </div>
+                        </div>
+                        <div class="artwork-item" data-category="inktober">
+                            <div class="artwork-image">
+                                <img src="Images/Inktober/20-phantom of the opera.png" alt="Inktober jour 20 - Phantom of the Opera">
+                            </div>
+                            <div class="artwork-info">
+                                <h3>Inktober 20/31 – Phantom of the Opera</h3>
+                                <p class="medium">Encre</p>
+                                <p class="year">2025</p>
+                            </div>
+                        </div>
+                        <div class="artwork-item" data-category="inktober">
+                            <div class="artwork-image">
+                                <img src="Images/Inktober/21-redcap.png" alt="Inktober jour 21 - Redcap">
+                            </div>
+                            <div class="artwork-info">
+                                <h3>Inktober 21/31 – Redcap</h3>
+                                <p class="medium">Encre</p>
+                                <p class="year">2025</p>
+                            </div>
+                        </div>
+                        <div class="artwork-item" data-category="inktober">
+                            <div class="artwork-image">
+                                <img src="Images/Inktober/22-selkie.PNG" alt="Inktober jour 22 - Selkie">
+                            </div>
+                            <div class="artwork-info">
+                                <h3>Inktober 22/31 – Selkie</h3>
+                                <p class="medium">Encre</p>
+                                <p class="year">2025</p>
+                            </div>
+                        </div>
+                        <div class="artwork-item" data-category="inktober">
+                            <div class="artwork-image">
+                                <img src="Images/Inktober/23-madre monte.PNG" alt="Inktober jour 23 - Madre Monte">
+                            </div>
+                            <div class="artwork-info">
+                                <h3>Inktober 23/31 – Madre Monte</h3>
+                                <p class="medium">Encre</p>
+                                <p class="year">2025</p>
+                            </div>
+                        </div>
+                        <div class="artwork-item" data-category="inktober">
+                            <div class="artwork-image">
+                                <img src="Images/Inktober/24-corpse walkers.png" alt="Inktober jour 24 - Corpse Walkers">
+                            </div>
+                            <div class="artwork-info">
+                                <h3>Inktober 24/31 – Corpse Walkers</h3>
+                                <p class="medium">Encre</p>
+                                <p class="year">2025</p>
+                            </div>
+                        </div>
+                        <div class="artwork-item" data-category="inktober">
+                            <div class="artwork-image">
+                                <img src="Images/Inktober/25-strzyga.png" alt="Inktober jour 25 - Strzyga">
+                            </div>
+                            <div class="artwork-info">
+                                <h3>Inktober 25/31 – Strzyga</h3>
+                                <p class="medium">Encre</p>
+                                <p class="year">2025</p>
+                            </div>
+                        </div>
+                        <div class="artwork-item" data-category="inktober">
+                            <div class="artwork-image">
+                                <img src="Images/Inktober/26-diao si gui.png" alt="Inktober jour 26 - Diao Si Gui">
+                            </div>
+                            <div class="artwork-info">
+                                <h3>Inktober 26/31 – Diao Si Gui</h3>
+                                <p class="medium">Encre</p>
+                                <p class="year">2025</p>
+                            </div>
+                        </div>
+                        <div class="artwork-item" data-category="inktober">
+                            <div class="artwork-image">
+                                <img src="Images/Inktober/27-kelpie.png" alt="Inktober jour 27 - Kelpie">
+                            </div>
+                            <div class="artwork-info">
+                                <h3>Inktober 27/31 – Kelpie</h3>
+                                <p class="medium">Encre</p>
+                                <p class="year">2025</p>
+                            </div>
+                        </div>
+                        <div class="artwork-item" data-category="inktober">
+                            <div class="artwork-image">
+                                <img src="Images/Inktober/28-tikbalang.png" alt="Inktober jour 28 - Tikbalang">
+                            </div>
+                            <div class="artwork-info">
+                                <h3>Inktober 28/31 – Tikbalang</h3>
+                                <p class="medium">Encre</p>
+                                <p class="year">2025</p>
+                            </div>
+                        </div>
+                        <div class="artwork-item" data-category="inktober">
+                            <div class="artwork-image">
+                                <img src="Images/Inktober/29-kallikantzaros.png" alt="Inktober jour 29 - Kallikantzaros">
+                            </div>
+                            <div class="artwork-info">
+                                <h3>Inktober 29/31 – Kallikantzaros</h3>
+                                <p class="medium">Encre</p>
+                                <p class="year">2025</p>
+                            </div>
+                        </div>
+                        <div class="artwork-item" data-category="inktober">
+                            <div class="artwork-image">
+                                <img src="Images/Inktober/30-black annis.png" alt="Inktober jour 30 - Black Annis">
+                            </div>
+                            <div class="artwork-info">
+                                <h3>Inktober 30/31 – Black Annis</h3>
+                                <p class="medium">Encre</p>
+                                <p class="year">2025</p>
+                            </div>
+                        </div>
+                        <div class="artwork-item" data-category="inktober">
+                            <div class="artwork-image">
+                                <img src="Images/Inktober/31-lapin de la lune.png" alt="Inktober jour 31 - Lapin de la Lune">
+                            </div>
+                            <div class="artwork-info">
+                                <h3>Inktober 31/31 – Lapin de la Lune</h3>
+                                <p class="medium">Encre</p>
+                                <p class="year">2025</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
         </div>
     </main>
 
@@ -115,7 +607,7 @@
                 <div class="about-content">
                     <div class="artist-photo">
                         <div class="placeholder-photo">
-                            <img src="Images/PhotoPro.jpg" alt="Photo professionnelle représentant l'artiste Oumayma sur fond noir">
+                            <img src="Images/PhotoProNoire.jpg" alt="Photo professionnelle représentant l'artiste Oumayma sur fond noir">
                         </div>
                     </div>
                     <div class="artist-info">
@@ -149,7 +641,6 @@
                             <button type="submit" class="btn submit-btn">Envoyer</button>
                         </form>
                     </div>
-                    
                     <div class="social-links">
                         <h3>Suivez-moi</h3>
                         <div class="social-icons">

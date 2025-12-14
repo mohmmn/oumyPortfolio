@@ -15,6 +15,7 @@ const pages = {
 
 // Initialisation du site
 document.addEventListener('DOMContentLoaded', function() {
+    initCategoryFilter();
     initNavigation();
     initScrollButton();
     initNextPageButton();
@@ -22,6 +23,34 @@ document.addEventListener('DOMContentLoaded', function() {
     initSmoothScrolling();
     initLightbox();
 });
+
+function initCategoryFilter() {
+  const chips = document.querySelectorAll('.category-chip');
+  const sections = document.querySelectorAll('.category-section');
+  console.log(chips)
+  if (!chips.length || !sections.length) return;
+
+  chips.forEach((chip) => {
+    chip.addEventListener('click', () => {
+      const category = chip.getAttribute('data-category');
+
+      // état visuel du chip actif
+      chips.forEach((c) => c.classList.remove('is-active'));
+      chip.classList.add('is-active');
+
+      // filtrage des rubriques
+      sections.forEach((section) => {
+        const sectionCategory = section.getAttribute('data-category');
+
+        if (category === 'all' || sectionCategory === category) {
+          section.style.display = 'block';      // <- forcé
+        } else {
+          section.style.display = 'none';
+        }
+      });
+    });
+  });
+}
 
 /**
  * Gestion de la lightbox pour les images
