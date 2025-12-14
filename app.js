@@ -69,7 +69,6 @@ function initLightbox() {
             <div class="lightbox-info">
                 <h3 class="lightbox-title"></h3>
                 <p class="lightbox-medium"></p>
-                <p class="lightbox-year"></p>
             </div>
         </div>
     `;
@@ -126,11 +125,6 @@ function initLightbox() {
         }
         
         .lightbox-medium,
-        .lightbox-year {
-            color: rgba(255, 255, 255, 0.8);
-            font-size: 1rem;
-            margin: 4px 0;
-        }
         
         .lightbox-close,
         .lightbox-prev,
@@ -203,13 +197,11 @@ function initLightbox() {
         const img = item.querySelector('img');
         const title = item.querySelector('h3').textContent;
         const medium = item.querySelector('.medium').textContent;
-        const year = item.querySelector('.year').textContent;
         
         lightbox.querySelector('.lightbox-image').src = img.src;
         lightbox.querySelector('.lightbox-image').alt = img.alt;
         lightbox.querySelector('.lightbox-title').textContent = title;
         lightbox.querySelector('.lightbox-medium').textContent = medium;
-        lightbox.querySelector('.lightbox-year').textContent = year;
         
         lightbox.classList.add('active');
         document.body.style.overflow = 'hidden';
