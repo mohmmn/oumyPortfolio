@@ -124,65 +124,64 @@ function initLightbox() {
             color: white;
         }
         
-        .lightbox-medium,
-        
-        .lightbox-close,
-        .lightbox-prev,
-        .lightbox-next {
-            position: absolute;
-            background: rgba(255, 255, 255, 0.1);
-            border: none;
-            color: white;
-            font-size: 2.5rem;
-            cursor: pointer;
-            padding: 10px 20px;
-            transition: background 0.3s ease;
-            border-radius: 4px;
-            backdrop-filter: blur(10px);
-        }
-        
-        .lightbox-close:hover,
-        .lightbox-prev:hover,
-        .lightbox-next:hover {
-            background: rgba(255, 255, 255, 0.2);
-        }
-        
-        .lightbox-close {
-            top: 20px;
-            right: 20px;
-            font-size: 3rem;
-            line-height: 1;
-            padding: 5px 15px;
-        }
-        
-        .lightbox-prev {
-            left: 20px;
-            top: 50%;
-            transform: translateY(-50%);
-        }
-        
-        .lightbox-next {
-            right: 20px;
-            top: 50%;
-            transform: translateY(-50%);
-        }
-        
-        @media (max-width: 768px) {
-            .lightbox-prev,
-            .lightbox-next {
-                font-size: 2rem;
-                padding: 8px 15px;
-            }
-            
-            .lightbox-close {
-                font-size: 2.5rem;
-            }
-            
-            .lightbox-image {
-                max-height: 60vh;
-            }
-        }
-    `;
+        .lightbox-medium {
+    font-size: 0.95rem;
+    opacity: 0.8;
+  }
+
+  /* Boutons minimalistes : uniquement les flèches, sans boîte */
+  .lightbox-close,
+  .lightbox-prev,
+  .lightbox-next {
+    position: absolute;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 2.5rem;
+    cursor: pointer;
+    padding: 0;
+  }
+
+  .lightbox-close:hover,
+  .lightbox-prev:hover,
+  .lightbox-next:hover {
+    background: transparent;
+  }
+
+  .lightbox-close {
+    top: 20px;
+    right: 20px;
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .lightbox-prev {
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .lightbox-next {
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  @media (max-width: 768px) {
+    .lightbox-prev,
+    .lightbox-next {
+      font-size: 2rem;
+    }
+
+    .lightbox-close {
+      font-size: 2.5rem;
+    }
+
+    .lightbox-image {
+      max-height: 60vh;
+    }
+  }
+`;
     document.head.appendChild(style);
     document.body.appendChild(lightbox);
     
@@ -202,6 +201,7 @@ function initLightbox() {
         lightbox.querySelector('.lightbox-image').alt = img.alt;
         lightbox.querySelector('.lightbox-title').textContent = title;
         lightbox.querySelector('.lightbox-medium').textContent = medium;
+
         
         lightbox.classList.add('active');
         document.body.style.overflow = 'hidden';
